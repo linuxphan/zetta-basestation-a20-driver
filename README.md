@@ -1,19 +1,19 @@
-##Zetta starter driver for any platform
+##Zetta basestation driver for any platform
 
 ###Install
 
 ```
-$> git clone https://github.com/zettajs/zetta-starter-driver zetta-{device}-{platform}-driver
+$> git clone https://github.com/zettajs/zetta-basestation-driver zetta-{device}-{platform}-driver
 ```
 
 ###Usage
 
 ```
 var zetta = require('zetta');
-var Starter = require('zetta-starter-driver');
+var Basestation = require('zetta-basestation-driver');
 
 zetta()
-  .use(Starter)
+  .use(Basestation)
   .listen(1337)
 ```
 
@@ -29,4 +29,4 @@ Calls the device's log() function passing the message param.
 
 ###Design
 
-This device driver is designed to be the starter code for other device drivers.
+This device driver is designed to be the basestation code for other device drivers.
